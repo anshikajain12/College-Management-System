@@ -26,7 +26,7 @@
             <div class="title_deg">
                 Login Form
             </div>
-            <form class="login_form" >
+            <form action="login_check.php" method="POST" class="login_form" >
                 <div>
                     <label class="label_deg">Username</label>
                     <input type="text" name="username">
