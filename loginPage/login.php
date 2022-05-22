@@ -20,16 +20,19 @@
     </script>
 </head>
 
-<body>
+<body background="./Assests/school2.jpg">
     <div class="center">
         <div class="form_deg">
-            <form>
+            <div class="title_deg">
+                Login Form
+            </div>
+            <form class="login_form" >
                 <div>
-                    <label>Username</label>
+                    <label class="label_deg">Username</label>
                     <input type="text" name="username">
                 </div>
                 <div>
-                    <label>Password</label>
+                    <label class="label_deg">Password</label>
                     <input type="Password" name="password">
                 </div>
                 <div>
