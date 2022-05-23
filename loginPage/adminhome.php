@@ -39,6 +39,7 @@ elseif($_SESSION['usertype']=='student'){
     </header>
     <aside>
         <ul>
+            <li><a href="../admins/admission.php">Admission</a></li>
             <li><a href="">Add Students</a></li>
             <li><a href="">View Student</a></li>
             <li><a href="">Add Teachers</a></li>
