@@ -1,16 +1,20 @@
-/* *{
-    background-color: #6e9f7c;;
-} */
+.body_deg{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
 .center{
     justify-content: center;
     text-align: center;
 }
 .form_deg{
+   padding-left: 500px;
     padding-top: 200px;
 }
 .label_deg{
     display: inline-block;
-    color: black;
+    color: white;
     width: 100px;
     text-align: right;
     padding-top:10px ;
@@ -25,7 +29,7 @@
 .btn{
     justify-content: center;
     position: relative;
-    width: 10%;
+    width: 15%;
     left: 2%;
 }
 .title_deg{

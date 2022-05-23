@@ -20,11 +20,20 @@
     </script>
 </head>
 
-<body background="./Assests/school2.jpg">
+<body background="../Assests/school2.jpg" class="body_deg">
     <div class="center">
         <div class="form_deg">
             <div class="title_deg">
                 Login Form
+                <h4>
+                    <?php
+                    error_reporting(0);
+                    session_start();
+                    session_destroy();
+                    echo $_SESSION['loginMessage'];
+
+                    ?>
+                </h4>
             </div>
             <form action="login_check.php" method="POST" class="login_form" >
                 <div>
