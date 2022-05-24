@@ -15,7 +15,7 @@ elseif($_SESSION['usertype']=='student'){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Home Page</title>
-    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="add_student.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -40,7 +40,7 @@ elseif($_SESSION['usertype']=='student'){
     <aside>
         <ul>
             <li><a href="../admins/admission.php">Admission</a></li>
-            <li><a href="">Add Students</a></li>
+            <li><a href="../admins/add_student.php">Add Students</a></li>
             <li><a href="">View Student</a></li>
             <li><a href="">Add Teachers</a></li>
             <li><a href="">View Teachers</a></li>
@@ -49,8 +49,33 @@ elseif($_SESSION['usertype']=='student'){
         </ul>
     </aside>
     <div class="content">
-        <h1>Admin Dashboard</h1>
+        <h1>Add Students</h1>
+        <div class="c1">
+
+            <form action="">
+                <div>
+                    <label >username</label>
+                    <input type="text" name="name">
+                </div>
+                <div>
+                    <label >Email</label>
+                    <input type="email" name="email">
+                </div>
+                <div>
+                    <label >Phone</label>
+                    <input type="number" name="phone">
+                </div>
+                <div>
+                    <label >Password</label>
+                    <input type="text" name="password">
+                </div>
+                <div>
+                    
+                    <input type="submit" class="input btn btn-primary" name="Add_Student" value="Add_Student">
+                </div>
+            </form>
         </div>
+    </div>
 </body>
 
 </html>
