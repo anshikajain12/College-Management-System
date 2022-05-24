@@ -1,10 +1,54 @@
 <?php
 session_start();
 if(!isset($_SESSION['username'])){
-    header("location:adminhome.php");
+    header("location:logins.php");
 }
 elseif($_SESSION['usertype']=='student'){
     header("location:login.php");
+}
+
+$host="localhost";
+$user="root";
+$password="";
+$db="collegeproject";
+$data=mysqli_connect($host,$user,$password,$db);
+
+
+
+if(isset($POST['add_Student'])){
+    $username=$_POST['name'];
+    $user_email=$_POST['email']; 
+    $user_phone=$_POST['phone']; 
+    $user_password=$_POST['password']; 
+    $usertype="student";
+
+    $check="SELECT * FROM user WHERE username='$username' ";
+    $check_user= mysqli_query($data,$check);
+    $row_count=mysqli_num_rows($check_user);
+
+    if($row_count==1){
+        echo "<script type='text/javascript'>
+        alert('Username Already Exist. Try Another One');
+        </script>";
+    }
+    else{
+    
+
+
+    $sql="INSERT INTO user(username,email,phone,usertype,password) VALUES ('$username','$user_email',
+    '$user_phone','$usertype','$user_password')";
+
+
+    $result=mysqli_query($data,$sql);
+    if($result){
+        echo "<script type='text/javascript'>
+        alert('Data Updated Successfully');
+        </script>";
+    }
+    else{
+        echo "Upload Failed";
+    }
+    }
 }
 ?>
 <!DOCTYPE html>
@@ -52,26 +96,26 @@ elseif($_SESSION['usertype']=='student'){
         <h1>Add Students</h1>
         <div class="c1">
 
-            <form action="">
+            <form action="#" method="POST">
                 <div>
-                    <label >username</label>
+                    <label>username</label>
                     <input type="text" name="name">
                 </div>
                 <div>
-                    <label >Email</label>
+                    <label>Email</label>
                     <input type="email" name="email">
                 </div>
                 <div>
-                    <label >Phone</label>
+                    <label>Phone</label>
                     <input type="number" name="phone">
                 </div>
                 <div>
-                    <label >Password</label>
+                    <label>Password</label>
                     <input type="text" name="password">
                 </div>
                 <div>
-                    
-                    <input type="submit" class="input btn btn-primary" name="Add_Student" value="Add_Student">
+
+                    <input type="submit" class="input btn btn-primary" name="add_Student" value="Add Student">
                 </div>
             </form>
         </div>
