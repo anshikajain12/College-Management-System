@@ -83,8 +83,8 @@ if(isset($POST['add_Student'])){
     </header>
     <aside>
         <ul>
-            <li><a href="../admins/admission.php">Admission</a></li>
-            <li><a href="../admins/add_student.php">Add Students</a></li>
+            <li><a href="admission.php">Admission</a></li>
+            <li><a href="add_student.php">Add Students</a></li>
             <li><a href="">View Student</a></li>
             <li><a href="">Add Teachers</a></li>
             <li><a href="">View Teachers</a></li>

@@ -45,7 +45,7 @@ if($_SESSION['message']){
             <li><a href="">Home</a></li>
             <li><a href="">Admission</a></li>
             <li><a href="">Contact Us</a></li>
-            <li><a href="./loginPage/login.php" class="btn btn-success">Login</a></li>
+            <li><a href="login.php" class="btn btn-success">Login</a></li>
         </ul>
     </nav>
     <div class="section1">

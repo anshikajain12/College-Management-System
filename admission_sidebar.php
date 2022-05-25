@@ -1,12 +1,4 @@
-<?php
-session_start();
-if(!isset($_SESSION['username'])){
-    header("location:adminhome.php");
-}
-elseif($_SESSION['usertype']=='student'){
-    header("location:login.php");
-}
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -39,18 +31,16 @@ elseif($_SESSION['usertype']=='student'){
     </header>
     <aside>
         <ul>
-            <li><a href="../admins/admission.php">Admission</a></li>
-            <li><a href="">Add Students</a></li>
-            <li><a href="">View Student</a></li>
+            <li><a href="admission.php">Admission</a></li>
+            <li><a href="add_student.php">Add Students</a></li>
+            <li><a href="view_student.php">View Student</a></li>
             <li><a href="">Add Teachers</a></li>
             <li><a href="">View Teachers</a></li>
             <li><a href="">Add Courses</a></li>
             <li><a href="">View courses</a></li>
         </ul>
     </aside>
-    <div class="content">
-        <h1>Admin Dashboard</h1>
-        </div>
+    
 </body>
 
 </html>

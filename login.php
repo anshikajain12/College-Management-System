@@ -20,7 +20,7 @@
     </script>
 </head>
 
-<body background="../Assests/school2.jpg" class="body_deg">
+<body background="./Assests/school2.jpg" class="body_deg">
     <div class="center">
         <div class="form_deg">
             <div class="title_deg">
