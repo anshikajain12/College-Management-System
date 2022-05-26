@@ -30,24 +30,11 @@ elseif($_SESSION['usertype']=='student'){
 </head>
 
 <body>
-    <header class="headers">
-        <a href="" class="dash">Admin Dashboard</a>
-        <div class="logout">
-            <a href="logout.php" class="btn btn-primary">Logout</a>
+<?php
+    include 'admission_sidebar.php';
 
-        </div>
-    </header>
-    <aside>
-        <ul>
-            <li><a href="admission.php">Admission</a></li>
-            <li><a href="add_student.php">Add Students</a></li>
-            <li><a href="view_student.php">View Student</a></li>
-            <li><a href="">Add Teachers</a></li>
-            <li><a href="">View Teachers</a></li>
-            <li><a href="">Add Courses</a></li>
-            <li><a href="">View courses</a></li>
-        </ul>
-    </aside>
+
+    ?>
     <div class="content">
         <h1>Admin Dashboard</h1>
         </div>

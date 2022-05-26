@@ -42,9 +42,9 @@ if($_SESSION['message']){
     <nav>
         <label class="logo">X College</label>
         <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Admission</a></li>
-            <li><a href="">Contact Us</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="admission.php">Admission</a></li>
+            <li><a href="contact.php">Contact Us</a></li>
             <li><a href="login.php" class="btn btn-success">Login</a></li>
         </ul>
     </nav>
