@@ -57,11 +57,10 @@ if(isset($_POST['add_teacher'])){
 
 <body>
 
-    <div class="content">
+    
         <center>
             <h1>Add Teacher</h1>
-            <br>
-            <br>
+            
             <div class="div_deg">
                 <form action="#" method="POST" enctype="multipart/form-data">
                     <div class="teacher">
@@ -85,7 +84,7 @@ if(isset($_POST['add_teacher'])){
                 </form>
             </div>
         </center>
-    </div>
+    
 </body>
 
 </html>
