@@ -34,6 +34,7 @@ if(isset($_POST['add_teacher'])){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Home Page</title>
+    <link rel="stylesheet" href="add_teacher.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -51,14 +52,7 @@ if(isset($_POST['add_teacher'])){
 
 
     ?>
-    <style>
-    .div_deg {
-        background-color:skyblue;
-        padding-top:70px;
-        padding-bottom:70px;
-        width:500px;
-    }
-    </style>
+    
 </head>
 
 <body>

@@ -1,4 +1,12 @@
-
+<?php
+session_start();
+if(!isset($_SESSION['username'])){
+    header("location:adminhome.php");
+}
+elseif($_SESSION['usertype']=='student'){
+    header("location:login.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +15,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Home Page</title>
-    <link rel="stylesheet" href="admin.css">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -19,28 +27,55 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
     </script>
+    <style>
+    
+
+    table th {
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    table td {
+        padding: 20px;
+        background-color: skyblue;
+       
+    }
+    
+    </style>
 </head>
 
 <body>
-    <header class="headers">
-        <a href="" class="dash">Admin Dashboard</a>
-        <div class="logout">
-            <a href="logout.php" class="btn btn-primary">Logout</a>
+    <?php
+    include 'admission_sidebar.php';
 
-        </div>
-    </header>
-    <aside>
-        <ul>
-            <li><a href="admission.php">Admission</a></li>
-            <li><a href="add_student.php">Add Students</a></li>
-            <li><a href="view_student.php">View Student</a></li>
-            <li><a href="add_teacher.php">Add Teachers</a></li>
-            <li><a href="">View Teachers</a></li>
-            <li><a href="">Add Courses</a></li>
-            <li><a href="courses.php">View courses</a></li>
-        </ul>
-    </aside>
-    
+
+    ?>
+    <center>
+        <h1>Courses</h1>
+        <table border="1px">
+            <tr>
+                <td>Course Name</td>
+                <td>Course Year</td>
+            </tr>
+
+            <tr>
+                <td>Btech</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>BCA</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Bsc</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>B.com</td>
+                <td>3</td>
+            </tr>
+        </table>
+    </center>
 </body>
 
 </html>

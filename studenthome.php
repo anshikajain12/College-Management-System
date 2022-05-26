@@ -41,7 +41,7 @@ elseif($_SESSION['usertype']=='admin'){
     </header>
     <aside>
         <ul>
-            <li><a href="">My Courses</a></li>
+            <li><a href="courses.php">My Courses</a></li>
             <li><a href="">My Result</a></li>
             
         </ul>
